@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giá trị trả về gọi là hàm</title>
+</head>
+<body>
+<script>
+    //Khi hàm kết thúc quá trình thực thi, nó có thể trả về giá trị cho nơi gọi hàm bằng cách sử dụng từ khóa return.
+    //Ví dụ về giá trị trả về đơn giản
+
+        function multiplyNums(x) {
+        return x * 2;
+    }
+        let theNumber = 10;
+        let result = multiplyNums(theNumber);
+        alert(result);
+        //Ví dụ này tạo hàm tên là multiplyNums với giá trị đầu vào được gán cho biến x. Hàm có chức năng trả về giá trị gấp đôi của đối số.
+
+
+        //Bạn có thể trả về giá trị từ bất cứ vị trí nào trong hàm chứ không chỉ ở cuối hàm.
+        //Sử dụng lệnh return trong khối lệnh điều kiện hoặc sau vòng lặp là cách làm phổ biến
+        //Ví dụ như sau:
+    function myFunction(x) {
+        if (x == 1){
+            return true;
+        }else {
+            return false;
+        }
+    }
+</script>
+<script>
+
+    //GỌI HÀM
+    //Bạn sẽ luôn gọi hàm với một vài đối số hoặc chỉ với cặp ngoặc trống như sau:
+
+    //let result = orderFruit();
+
+    //Nếu hàm đòi hỏi phải có đối số, lời gọi hàm sẽ như sau:
+
+    //let result = orderFruit(type, quantity);
+    // sau đây alf ví dụ minh họa
+    function orderFruit() {
+        let total = 0;
+        // Call another function to place order
+        return total;
+    }
+</script>
+<script type = "text/javascript">
+    let result = orderFruit();
+    alert("The total is " + result);
+    //Khi chạy đoạn mã này gọi đến hàm orderFruit()
+    //Hàm orderFruit() gọi một hàm khác để tạo đơn đăth hàm
+    //Sau đó, tổng chi phí được tính và trả lại cho hàm gọi.
+
+
+
+    //HÀM VÔ DANH HOẶC CHƯA ĐẶT TÊN
+    //Ví dụ, với cách tạo hàm không tên hay còn gọi là hàm vô danh, hàm có thể được định nghĩa và gắn với biến như sau:
+    let divNums = function (firstNum, secondNum) {
+        return firstNum/secondNum;
+    }
+    //Các hàm vô danh thường được dùng trong JavaScript hướng đối tượng và dùng làm hàm xử lý sự kiện.
+</script>
+
+</body>
+</html>
